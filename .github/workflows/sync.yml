@@ -2,7 +2,8 @@ name: Garmin to Notion Sync
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    # 每週六 09:00（台灣時間 UTC+8）= 每週六 01:00 UTC
+    - cron: '0 1 * * 6'
   workflow_dispatch:
 
 jobs:
